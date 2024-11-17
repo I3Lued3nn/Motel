@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+}
+header{
+    background-color: aliceblue;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    z-index: 2;
+    margin-right: 10%;
+}
+
+.logotop{
+    margin-left: 10%;
+}
+
+.logotop img{
+    width: 10rem;
+    height: 3rem;
+}
+
+.nav-link{
+    transition: 0.7s ease-in-out;
+    font-size: 1.2rem;
+    color: rgb(255, 0, 0);
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.Hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: rgb(22, 30, 36);
+}
+
+.centxt{
+    font-size: 4rem;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}      
+
+.enfeite{
+    color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra{
+    width: 200px;
+    height: 2px;
+    background-color: red;
+    margin: 10px;
+}
+
+.ball{
+    background-color: red;
+    border-radius: 90%;
+    width: 1rem;
+    height: 1rem;
+}
+
+.txtCadap{
+    padding: 5rem;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.txtCadap strong{
+    color: red;
+    font-size: 3rem;
+    font-weight: 250;
+}
+
+.txtnov{
+    margin-left: 5rem;
+}
+
+.cardnov{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background: rgba(176, 150, 150, 0.2);
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: red;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.card-list .card-link .badge{
+    color: aliceblue;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: red;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+    font-size: 1rem;
+    text-align: justify;
+    color: black;
+    font-weight: 600;
+}
+
+.card-title strong{
+    color: red;
+    font-weight: 350;
+    font-size: 1.19rem;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 1px solid red;
+    color: red;
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: aliceblue;
+    background-color: red;
+    transition: 0.5s ease;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background-color: red;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: red;
+}
+
+.centxt2{
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}      
+.cards li img{
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+.cards li{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 4rem 0;
+}
+
+.txtCard{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    margin-left: 4rem;
+}
+
+.txtCard p{
+    text-align: justify;
+    font-size: 1.3rem;
+    width: 80%;
+}
+
+
+.txtCard a{
+    color: aliceblue;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: red;
+    width: fit-content;
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+
+.txtCard a:hover{
+    scale: 1.1;
+}
+
+.txtCard h1{
+    color: red;
+    font-weight: 350;
+}
+
+
+footer{
+    color: rgb(177, 170, 170);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 17rem;
+    margin-top: 6rem;
+    justify-content: space-around;
+    background: rgb(35, 3, 3);
+}
+
+.foo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.foo > h1{
+    margin-top: 40px;
+}
+
+.foo a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6.5rem;
+    color: rgb(255, 0, 0);
+    transition: 0.5s ease-in;
+}
+
+.foo a:hover{
+    color: rgba(255, 255, 255, 0.61);
+}
+
+.foo h1{
+    margin-top: 10px;
+}
+
+.foo li{
+    padding: 0.5rem;
+}
+
+.foo p{
+    margin-left: 10px;
+}
+
+
+.flu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 90%;
+    position: fixed;
+    z-index: 999;
+}
+
+.flu a{
+    font-size: 3rem;
+    color: rgb(3, 253, 3);
+    transition: 0.5s ease;
+}
+
+.back{
+    margin-left: 95%;
+    position: fixed;
+}
+
+.flu a:hover{
+    font-size: 3.5rem;
+}
+
+.bi-geo-alt{
+    display: none;
+}
+
+.bi-telephone{
+    display: none;
+}
+
+
+.topscroll{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.topscroll button{
+    background: none;
+    border: none;
+
+}
+
+.topscroll span{
+    font-size: 4rem;
+    width: 4rem;
+    background-color: red;
+    color: aliceblue;
+    transform: rotate(90deg);
+    cursor: pointer;    
+    border: 2px aliceblue solid;
+    border-radius: 5rem;
+    transition: 0.5s ease;
+}
+
+.topscroll span:hover{
+    background-color: rgba(255, 0, 0, 0.377);
+    color: black;
+}
+
+
+
+@media(max-width:768px){
+    .Hamburguer{
+        display: block;
+    }
+
+    .Hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+
+    }
+
+    .Hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+
+    }
+    
+    .Hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+
+    .navmenu{
+        position: absolute;
+        right: -100%;
+        top: 110px;
+        gap: 0;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(2px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        margin-right: 0;
+        display: none;
+
+    }
+
+    .navmenu.active{
+        display: flex;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .navmenu.active{
+        right: 0;
+    }
+
+    .centxt{
+        font-size: 2.5rem;
+    }
+
+    .barra{
+        width: 30%;
+    }
+
+    .txtCadap{
+        padding: 2rem;
+        font-size: 0.5rem;
+    }
+
+    .txtCadap strong{
+        font-size: 1.5rem;
+    }
+
+    .txtnov{
+        margin-left: 0;
+        padding: 2rem;
+        margin-bottom: -2rem;
+    }
+
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+
+    .centxt2{
+        margin-top: 25px;
+    }
+
+    .cards{
+        margin-top: 20px;
+    }
+
+    .cards li{
+        flex-direction: column;
+        padding: 0 0 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .txtCard{
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        width: 85%;
+    }
+
+    .txtCard h1{
+        width: 90%;
+
+    }
+
+    .txtCard p{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .cards li img{
+        width: 90%;
+        border-radius: 2rem;
+    }
+
+    footer{
+        height: 55rem;
+        flex-direction: column;
+    }
+    .foo{
+        padding: 2rem;
+    }
+
+    .topscroll{
+        display: none;
+    }
+
+    .flu{
+        top: 90%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .back{
+        display: flex;
+        justify-content: space-around;
+        background-color: aliceblue;
+        border-radius: 1rem;
+        width: 70%;
+        margin-left: 0;
+    }
+
+    .flu a{
+        font-size: 2rem;
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .flu a:hover{
+        font-size: 2rem;
+    }
+
+    .bi-geo-alt{
+        display: flex;
+    }
+    
+    .bi-telephone{
+        display: flex;
+    }
+
+
+
+}
